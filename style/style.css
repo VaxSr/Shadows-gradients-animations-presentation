@@ -1,0 +1,60 @@
+section div {
+    float: left;
+    margin: 10px 20px;
+}
+
+section p {
+    margin: 10px 20px;
+
+}
+
+section::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+
+.box {
+    width: 200px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+.box.linear {
+    background: linear-gradient(45deg, red, blue);
+}
+
+.box.radial {
+    background: radial-gradient(circle, red, blue);
+}
+
+.box.conic {
+    background: conic-gradient(red, blue);
+}
+
+.box.dimension {
+    transition: all 2s;
+}
+
+.box.dimension:hover {
+    width: 100px;
+    height: 50px;
+}
+
+.box.color {
+    background-color: blue;
+    transition: all 2s;
+}
+
+.box.color:hover {
+    background-color: red;
+}
+
+.box.radius {
+    transition: border-radius 2s;
+}
+
+.box.radius:hover {
+    border-radius: 50%;
+}
