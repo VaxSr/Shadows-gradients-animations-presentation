@@ -2,7 +2,7 @@
  * style.css
  *
  *
- * let's sets also the box-sizing property to border-box for all elements.
+ * using some property for the presentation of the new section
  *
  */
 
@@ -16,9 +16,16 @@ html {
     box-sizing: inherit;
 }
 
+h1{
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 100px;
+}
+
+/* division for each section */
 section div {
     float: left;
-    margin: 10px 20px;
+    margin: 20px 30px;
 }
 
 section p {
